@@ -1,0 +1,8 @@
+a = 2
+b = 5
+
+add = a + b
+multi = a * b
+
+print(f"Сума a і b: {add}")
+print(f"Добуток a і b: {multi}")
