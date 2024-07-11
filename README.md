@@ -114,4 +114,3 @@ $ python add_multiply.py
 ```
 
 This `README.md` file contains detailed descriptions of each program, examples of their usage, explanations of the code, and instructions on how to run them.
-```
