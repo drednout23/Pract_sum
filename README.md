@@ -1,149 +1,122 @@
-# Программы на Python
+Вот обновленный файл `README.md` с еще большим количеством пояснений к коду:
 
-Этот репозиторий содержит несколько небольших программ на Python для различных задач.
+```markdown
+# Python Programs
 
-## 1. Реверс строки
+This repository contains several small Python programs for various tasks.
 
-Программа принимает строку и возвращает её в обратном порядке.
+## 1. String Reverse
 
-### Код
+### Description
+This program takes a string and returns it in reverse order. It uses Python's slicing feature to reverse the string.
 
+### Example
+For the input `"val"`, the output will be `"lav"`.
+
+### Code Explanation
+```python
 def backward_string(val: str) -> str:
-    return val[::-1]
-    return None
+    return val[::-1]  # This line uses slicing to reverse the string
+```
 
-print("Example:")
-print(backward_string("val"))
-
-# Эти "asserts" используются для самопроверки
-assert backward_string("val") == "lav"
-assert backward_string("") == ""
-assert backward_string("ohho") == "ohho"
-assert backward_string("123456789") == "987654321"
-
-print("The mission is done! Click 'Check Solution' to earn rewards!")
-
-### Пример использования
-
+### Usage Example
+To run this program, save the code to a file named `backward_string.py` and execute it:
+```sh
 $ python backward_string.py
-Example:
-lav
-The mission is done! Click 'Check Solution' to earn rewards!
+```
 
-## 2. Остаток от деления
+## 2. Remainder of Division
 
-Программа принимает два целых числа и возвращает остаток от деления первого числа на второе.
+### Description
+This program takes two integers and returns the remainder when the first number is divided by the second. It uses the modulo operator `%` to find the remainder.
 
-### Код
+### Example
+For the input `10` and `3`, the output will be `1`.
 
+### Code Explanation
+```python
 def find_remainder(dividend: int, divisor: int) -> int:
-    return dividend % divisor
-    return 0
+    return dividend % divisor  # This line calculates the remainder of the division
+```
 
-print("Example:")
-print(find_remainder(3, 2))
-
-# Эти "asserts" используются для самопроверки
-assert find_remainder(10, 3) == 1
-assert find_remainder(14, 4) == 2
-assert find_remainder(27, 4) == 3
-assert find_remainder(10, 5) == 0
-assert find_remainder(10, 1) == 0
-assert find_remainder(5, 7) == 5
-assert find_remainder(7, 5) == 2
-
-print("The mission is done! Click 'Check Solution' to earn rewards!")
-
-### Пример использования
-
+### Usage Example
+To run this program, save the code to a file named `find_remainder.py` and execute it:
+```sh
 $ python find_remainder.py
-Example:
-1
-The mission is done! Click 'Check Solution' to earn rewards!
+```
 
-## 3. Определение знака числа
+## 3. Determine the Sign of a Number
 
-Программа принимает целое число и возвращает строку "positive", "negative" или "zero" в зависимости от знака числа.
+### Description
+This program takes an integer and returns a string indicating whether the number is "positive", "negative", or "zero". It uses simple conditional statements to determine the sign of the number.
 
-### Код
+### Example
+For the input `-5`, the output will be `"negative"`.
 
+### Code Explanation
+```python
 def determine_sign(num: int) -> str:
-    if num > 0:
+    if num > 0:  # Checks if the number is positive
         return "positive"
-    elif num < 0:
+    elif num < 0:  # Checks if the number is negative
         return "negative"
-    else:
+    else:  # If the number is neither positive nor negative, it is zero
         return "zero"
-    return ""
+```
 
-print("Example:")
-print(determine_sign(11))
-
-# Эти "asserts" используются для самопроверки
-assert determine_sign(5) == "positive"
-assert determine_sign(0) == "zero"
-assert determine_sign(-10) == "negative"
-assert determine_sign(1) == "positive"
-assert determine_sign(-1) == "negative"
-assert determine_sign(999) == "positive"
-assert determine_sign(-1000) == "negative"
-assert determine_sign(123456789) == "positive"
-assert determine_sign(-987654321) == "negative"
-assert determine_sign(2) == "positive"
-
-print("The mission is done! Click 'Check Solution' to earn rewards!")
-
-### Пример использования
-
+### Usage Example
+To run this program, save the code to a file named `determine_sign.py` and execute it:
+```sh
 $ python determine_sign.py
-Example:
-positive
-The mission is done! Click 'Check Solution' to earn rewards!
+```
 
-## 4. Проверка четности числа
+## 4. Check if a Number is Even
 
-Программа принимает целое число и возвращает `True`, если число четное, и `False` в противном случае.
+### Description
+This program takes an integer and returns `True` if the number is even, and `False` otherwise. It uses the modulo operator `%` to check if the number is divisible by 2.
 
-### Код
+### Example
+For the input `4`, the output will be `True`.
 
+### Code Explanation
+```python
 def is_even(num: int) -> bool:
-    return num % 2 == 0
-    return None
+    return num % 2 == 0  # Checks if the number is divisible by 2
+```
 
-print("Example:")
-print(is_even(2))
-
-# Эти "asserts" используются для самопроверки
-assert is_even(2) == True
-assert is_even(5) == False
-assert is_even(0) == True
-
-print("The mission is done! Click 'Check Solution' to earn rewards!")
-
-### Пример использования
-
+### Usage Example
+To run this program, save the code to a file named `is_even.py` and execute it:
+```sh
 $ python is_even.py
-Example:
-True
-The mission is done! Click 'Check Solution' to earn rewards!
+```
 
-## 5. Сумма и произведение
+## 5. Sum and Product
 
-Программа вычисляет сумму и произведение двух заданных чисел и выводит результат.
+### Description
+This program calculates the sum and product of two given numbers and displays the results. It uses basic arithmetic operations to find the sum and product.
 
-### Код
+### Example
+For the inputs `2` and `5`, the sum will be `7` and the product will be `10`.
 
-a = 2
-b = 5
+### Code Explanation
+```python
+a = 2  # First number
+b = 5  # Second number
 
-add = a + b
-multi = a * b
+add = a + b  # Calculates the sum of a and b
+multi = a * b  # Calculates the product of a and b
 
-print(f"Сума a і b: {add}")
-print(f"Добуток a і b: {multi}")
+print(f"Sum of a and b: {add}")  # Displays the sum
+print(f"Product of a and b: {multi}")  # Displays the product
+```
 
-### Пример использования
-
+### Usage Example
+To run this program, save the code to a file named `add_multiply.py` and execute it:
+```sh
 $ python add_multiply.py
-Сума a і b: 7
-Добуток a і b: 10
+```
+
+This `README.md` file contains detailed descriptions of each program, examples of their usage, explanations of the code, and instructions on how to run them.
+```
+
+This version provides a thorough explanation of each program, including descriptions, code explanations, and usage instructions.
